@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+  }
+  button, a input{
+    cursor: pointer;
+  }
+  #page{
+    color: #11113d;
+  }
+  header{
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 80px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header.sticky
+  {
+    background-color: #FFFFFF;
+    padding: 0px 70px;
+    box-shadow: 0 5px 10px rgba(66, 43, 151, 0.1);
+    transition: 0.5s;
+    z-index: 100;
+  }
+  header ul{
+    display: flex;
+  }
+  header ul li{
+    margin-right: 30px;
+    list-style: none;
+  }
+  header ul li:last-child{
+    margin-right: 0px;
+  }
+  #page{
+    color: #11113d;
+  }
+  header ul li a{
+    text-decoration: none;
+    color: inherit;
+    text-transform: uppercase;
+  }
+  div.welcome{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 0px 80px;
+    gap: 30px;
+    margin-top: 150px;
+  }
+  div.w50{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .w50 img{
+    width: 100%;
+  }
+  .w50 h1{
+    font-size: 64px;
+  }
+  .w50 h3{
+    font-size: 36px;
+    font-weight: 500;
+  }
+  button.primary{
+    background-color: #3639D9;
+    border: none;
+    height: 44px;
+    border-radius: 22px;
+    width: 188px;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+  .switch div{
+    width: 50px;
+    height: 50px;
+    background-color: #11113d;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    color: #FFFFFF;
+    border-radius: 30px;
+    padding: 15px 10px;
+    font-size: 12px;
+  }
+  .switch{
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+  }
+  header input{
+    border: none;
+    background-color: #F6F7FF;
+    height: 44px;
+    padding: 20px;
+    border-radius: 22px;
+    width: 300px;
+    outline: none;
+  }
+  
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin-top: 120px;
+    gap: 20px;
+    padding: 30px;
+  
+  }
+  .card{
+    width: 100%;
+    min-width: 220px;
+    max-width: 280px;
+    box-shadow: 0px 0px 20px #11113d20;
+    border-radius: 10px;
+    padding: 10px;
+    margin: auto;
+  }
+  .top
+  {
+    display: flex;
+  }
+  .top img{
+    margin-right: 10px;
+  }
+  .prdimage img{
+    border-radius: 10px;
+    margin: 10px 0px;
+    width: 100%;
+  }
+  button.view{
+    width: 120px;
+    margin: 15px; 
+  }
+  .center{
+    text-align: center;
+  }
+  footer{
+    background-color: #11113d;
+    color: #FFFFFF;
+    height: 64px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 150px;
+  }
+  .onboard{
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    height: 100vh;
+  }
+  .onboard div.start{
+    background-image: url(image/bg1.jpg);
+    background-repeat: no-repeat;
+    color: #FFFFFF;
+  }
+  .onboard div.board{
+    padding: 150px 80px 50px 80px;
+  }
+  .onboard button{
+    margin-top: 20px;
+  }
+  .formbx{
+    max-width: 600px;
+  }
+  .formbx div.blk{
+    display: grid;
+    margin-bottom: 15px;
+    gap: 20px;
+  }
+  .blk1{
+    grid-template-columns: 1fr 1fr;
+  }
+  .blk2{
+    grid-template-columns: 1fr;
+  }
+  .blk3{
+    grid-template-columns: 1fr 4fr;
+  }
+  .formbx input{
+    width: 100%;
+    height: 44px;
+    border-radius: 10px;
+    border: 1px solid #11113d;
+    margin-top: 5px;
+  }
+  .formbx label{
+    font-size: 14px;
+  }
+  .blk4{
+    display: flex;
+    align-items: center;
+  }
+  .blk4 input{
+    width: 20px;
+    margin-right: 10px;
+  }
+  .submit input{
+    background-color: #3639D9;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 22px;
+    margin-top: 10px;
+  }
+  textarea{
+    border: 1px solid #11113d;
+    border-radius: 10px;
+    margin-top: 5px;
+  }
+  .oob2 p, .wp p{
+    font-size: 54px;
+    line-height: 1.4;
+  }
+  .fp{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .gr{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    margin: 70px auto;
+    padding: 50px;
+  }
+  .gr img{
+    width: 100%;
+    border-radius: 20px;
+  }
+  .brief{
+    font-family: 'Montserrat';
+    font-size: 20px;
+    line-height: 1.5;
+    color:#11113d;
+  }
+  .info h2, h3{
+    font-family: 'Montserrat';
+    font-size: 36px;
+    font-weight: 600;
+  }
+  .info h3{
+    font-weight: 400;
+  }
+  .more-info hr{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #11113d50;
+    border-radius: 2px;
+  }
+  .price{
+    font-weight: 600;
+    font-size: 24px;
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  @media (max-width: 991px){
+    .w50 h1{
+        font-size: 48px;
+    }
+    .w50 h3{
+        font-size: 32px;
+        font-weight: 500;
+    }
+    .toggle
+    {
+        width: 40px;
+        height: 40px;
+        background: url(image/menu.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30px;
+        cursor: pointer;
+    }
+    .toggle.active
+    {
+        background: url(image/close.png);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 25px;
+        cursor: pointer;
+    }
+    .menu
+    {
+        position: fixed;
+        top: 75px;
+        right: 100%;
+        display: block;
+        padding: 30px;
+        text-align: center;
+        width: fit-content;
+        background: #021639e1;
+        color: #FFFFFF;
+        transition: 0.5s;
+        z-index: 999;
+        margin-right: 80px;
+    }
+    header ul li{
+        margin: 10px 0px;
+    }
+    .menu.active
+    {
+        right: 0;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 10px;
+        padding: 20px;
+    }
+    .card{
+        min-width: 180px;
+    }
+    .onboard{
+        grid-template-columns: 2fr 3fr;
+    }
+    .wp p{
+        font-size: 28px;
+    }
+    .onboard div.board{
+        padding: 150px 30px;
+    }
+    /* .ob2{
+        grid-template-columns: 1fr 2fr;
+    } */
+    textarea{
+        width: 100%;
+    }
+    .oob2{
+        display: none;
+    }
+    .ob2{
+        grid-template-columns: 1fr;
+    }
+    .ob2 .formbx{
+        margin: 0px auto;
+    }
+  
+  }
+  
+  @media (max-width: 600px){
+    div.welcome{
+        grid-template-columns: 1fr;
+        padding: 0px 30px;
+        gap: 60px;
+    }
+    header{
+        padding: 0px 30px;
+    }
+    header.sticky{
+        padding: 0px 25px;
+    }
+    .menu{
+        margin-right: 30px;
+    }
+    header input{
+        display: none;
+    }
+    .cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    .card{
+        min-width: 150px;
+    }
+    .onboard div.start{
+        display: none;
+    }
+    .onboard{
+        grid-template-columns: 1fr;
+    }
+    .oooob{
+        grid-template-columns: 1fr;
+    }
+    .gr{
+        grid-template-columns: 1fr;
+        padding: 30px;
+    }
+  }
+  
